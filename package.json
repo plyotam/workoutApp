@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -m \"Deploy React app to GitHub Pages\""
+    "deploy": "npm run build && rm -f build/static/js/*.map && rm -f build/static/css/*.map && gh-pages -d build -m 'Deploy React app to GitHub Pages'"
   },
   "eslintConfig": {
     "extends": [
